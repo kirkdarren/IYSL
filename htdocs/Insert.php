@@ -2,6 +2,11 @@
 include("db_connect.php");
 include("menu.php");
 ?>
+<html>
+    <head>
+    <link rel="stylesheet" href="insert.css">
+    </head>
+    <body>
 <h1> Create Team </h1>
     <form method="post">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
@@ -65,3 +70,5 @@ include("menu.php");
                 
         }
     ?>
+    </body>
+    </html>

@@ -1,9 +1,14 @@
 
-    include('db_connect.php');
-    include("menu.php");
-
-<h1> Teams </h1>
-    <table border="1" align="center" cellspacing="0" cellpadding="10">
+ <html>
+    <head><link rel="stylesheet" href="team.css"></head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <table><h1>Teams</h1>
         <tr>
             <th> Team Id </th>
             <th> Team Name </th>
@@ -33,3 +38,5 @@
             }
         }
     ?>
+    </body>
+    </html>

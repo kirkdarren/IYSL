@@ -1,9 +1,13 @@
+<head>
+    <link rel="stylesheet" href="insert.css">  </link>
+</head>
+
 <h1> Create Players </h1>
     <form method="post">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
             <tr>
-                <td> Player id <br> >= 12390 </td>
-                <td> <input type="text" name="player_id" required> </td>
+                <td> Player id  </td>
+                <td> <input type="text" name="player_id" required value=">=12390"> </td>
             </tr>
             <tr>
                 <td> Date of Birth </td>
@@ -61,7 +65,8 @@
         $query = mysqli_query($conn, $sql);
         if(mysqli_num_rows($query) > 0) {
             echo "<script> alert('Player already exists'); </script>";
-        } else {
+        } 
+    else {
             $sql = "INSERT INTO Players (Player_id, Date_of_birth, Email, Contact_number , Last_name , First_name , Middle_name , Team_id)
              VALUES ('$player_id', '$Birthday', '$Email', '$Contact_number', '$Last_name' , '$First_name' , '$Middle_name' , '$Team_id')";
             $query = mysqli_query($conn, $sql);

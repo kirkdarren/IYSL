@@ -10,6 +10,7 @@ include("menu.php");
     <link rel="stylesheet" href="player.css">
     </head>
 <h1> Player List </h1>
+
     <table border="1" align="center" cellspacing="0" cellpadding="10">
         <tr>
             <th> Player Id </th>

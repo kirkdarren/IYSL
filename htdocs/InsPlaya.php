@@ -3,6 +3,9 @@
 </head>
 
 <h1> Create Players </h1>
+
+
+
     <form method="post">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
             <tr>
@@ -63,6 +66,8 @@
 
         $sql = "SELECT * FROM Players WHERE Player_id = '$player_id'";
         $query = mysqli_query($conn, $sql);
+        
+        
         if(mysqli_num_rows($query) > 0) {
             echo "<script> alert('Player already exists'); </script>";
         } 
@@ -70,8 +75,8 @@
             $sql = "INSERT INTO Players (Player_id, Date_of_birth, Email, Contact_number , Last_name , First_name , Middle_name , Team_id)
              VALUES ('$player_id', '$Birthday', '$Email', '$Contact_number', '$Last_name' , '$First_name' , '$Middle_name' , '$Team_id')";
             $query = mysqli_query($conn, $sql);
-            if($query) {
-                echo "<script> alert(' Team created successfully,proceed to creating players'); window.location='Player_list.php';</script>";
+        if($query)  {
+                echo "<script> alert('Team is succesfully added'); window.location='Player_list.php';</script>";
             } else {
                 echo "<script> alert('Error: " . $sql . "<br>" . mysqli_error($conn) . "'); </script>";
             }

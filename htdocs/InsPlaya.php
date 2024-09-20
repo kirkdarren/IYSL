@@ -10,7 +10,7 @@
         <table border=1 align="center" cellspacing="0" cellpadding="10">
             <tr>
                 <td> Player id  </td>
-                <td> <input type="text" name="player_id" required> </td>
+                <td> <input type="text" name="player_id" placeholder=">=12390" required> </td>
             </tr>
             <tr>
                 <td> Date of Birth </td>

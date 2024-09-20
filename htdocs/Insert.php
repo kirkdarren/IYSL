@@ -12,7 +12,7 @@ include("menu.php");
         <table border=1 align="center" cellspacing="0" cellpadding="10">
             <tr>
                 <td> Team id </td>
-                <td> <input type="text" name="team_id" required> </td>
+                <td> <input type="text" name="team_id" required > </td>
             </tr>
             <tr>
                 <td> Team Name </td>
@@ -20,15 +20,15 @@ include("menu.php");
             </tr>
             <tr>
                 <td> City </td>
-                <td> <input type="text" name="city" required> </td>
+                <td> <input type="text" name="city" required > </td>
             </tr>
             <tr>
                 <td> Manager's Last Name </td>
-                <td> <input type="text" name="Manager_lastname" required> </td>
+                <td> <input type="text" name="Manager_lastname" required > </td>
             </tr>
             <tr>
                 <td> Manager's First name </td>
-                <td> <input type="text" name="Manager_firstname" required> </td>
+                <td> <input type="text" name="Manager_firstname" required > </td>
             </tr>
             <tr>
                 <td> Manager's Middle Name </td>
@@ -52,11 +52,12 @@ include("menu.php");
             $Manager_Fname = $_POST['Manager_firstname'];
             $Manager_Mname = $_POST['Manager_middlename'];
            
-
+           
             $sql = "SELECT * FROM Team WHERE Team_id = '$team_id'";
             $query = mysqli_query($conn, $sql);
             if(mysqli_num_rows($query) > 0) {
-                echo "<script> alert('Team already exists'); </script>";
+                echo "<script> alert('Team Id already exists. Please Choose another'); </script>";
+                
             } else {
                 $sql = "INSERT INTO Team (Team_id, Team_name, City, Manager_Lastname , Manager_Firstname , Manager_Middlename)
                  VALUES ('$team_id', '$team_name', '$city', '$Manager_Lname', '$Manager_Fname' , '$Manager_Mname')";

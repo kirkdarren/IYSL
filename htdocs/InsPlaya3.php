@@ -4,6 +4,8 @@
 
 <h1> Create Players </h1>
 <h1> Create Players </h1>
+
+
     <form method="post">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
             <tr>
@@ -41,7 +43,7 @@
 
             <tr>
                 <td colspan="2">
-                    <button type="submit" name="Insert1"> Create</button>
+                    <button type="submit" name="Insert4"> Create</button>
                 </td>
             </tr>
             
@@ -51,7 +53,7 @@
     include("db_connect.php");
     include("menu.php");
 
-    if(isset($_POST['Insert1'])) {
+    if(isset($_POST['Insert4'])) {
         $player_id = $_POST['player_id'];
         $Birthday = $_POST['Birthday'];
         $Email = $_POST['email'];
@@ -74,7 +76,7 @@
              VALUES ('$player_id', '$Birthday', '$Email', '$Contact_number', '$Last_name' , '$First_name' , '$Middle_name' , '$Team_id')";
             $query = mysqli_query($conn, $sql);
         if($query)  {
-                echo "<script> alert('Player is added create 10 more'); window.location='InsPlaya1.php';</script>";
+                echo "<script> alert('Player is added create 7 more'); window.location='InsPlaya4.php';</script>";
             } else {
                 echo "<script> alert('Error: " . $sql . "<br>" . mysqli_error($conn) . "'); </script>";
             }

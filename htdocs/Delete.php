@@ -1,14 +1,17 @@
+<?php
+include("db_connect.php");
+include("menu.php");
+
+?>
 <head>
     <link rel="stylesheet" href="insert.css">  </link>
 </head>
-
-<h1> Create Players </h1>
-<h1> Create Players </h1>
-    <form method="post">
+<h1>Delete Player</h1>
+<form method="post">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
             <tr>
                 <td> Player id  </td>
-                <td> <input type="text" name="player_id" placeholder=">=12390" required> </td>
+                <td> <input type="text" name="player_id" required> </td>
             </tr>
             <tr>
                 <td> Date of Birth </td>
@@ -41,17 +44,15 @@
 
             <tr>
                 <td colspan="2">
-                    <button type="submit" name="Insert1"> Create</button>
+                    <button type="submit" name="Delete"> Delete</button>
                 </td>
             </tr>
             
     </form>
-
     <?php
-    include("db_connect.php");
-    include("menu.php");
+    
 
-    if(isset($_POST['Insert1'])) {
+    if(isset($_POST['Delete'])) {
         $player_id = $_POST['player_id'];
         $Birthday = $_POST['Birthday'];
         $Email = $_POST['email'];

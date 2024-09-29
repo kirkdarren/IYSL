@@ -6,16 +6,16 @@ include("menu.php");
 <head>
     <link rel="stylesheet" href="insert.css">  </link>
 </head>
-<h1>Delete Player</h1>
+<h1>Delete Team</h1>
 <form method="get">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
             <tr>
-                <td> Player id  </td>
-                <td> <input type="text" name="player_id" required> </td>
+                <td> Team id  </td>
+                <td> <input type="text" name="team_id" required> </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <button type="submit" name="Delete"> Delete</button>
+                    <button type="submit" name="DeleteT"> Delete</button>
                 </td>
             </tr>
     
@@ -25,10 +25,10 @@ include("menu.php");
     <?php
     
 
-    if(isset($_GET['Delete'])) {
-        $player_id = $_GET['player_id'];
+    if(isset($_GET['DeleteT'])) {
+        $team_id = $_GET['team_id'];
        
-        $sql = "DELETE FROM Players WHERE Player_id = $player_id";
+        $sql = "DELETE FROM Team WHERE Team_id = $team_id";
         $conn ->query($sql);
        
             

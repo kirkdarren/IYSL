@@ -10,6 +10,8 @@
         <li><a href="Teams.php">Teams</a></li>
         <li><a href="Player_list.php">View Players</a></li>
         <li><a href="Insert.php">Insert</a></li>
+        <li><a href="Delete.php">Delete Player</a></li>
+        <li><a href="Delete_team.php">Delete Team</a></li>
        
     </ul>
 </nav>

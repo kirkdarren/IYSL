@@ -1,6 +1,18 @@
+.bg {
+    background-image: url("images/images.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    opacity: 80%;
+}
 h1 {
     text-align: center;
-    color: #32a852; 
+    color: #58ff85; 
     font-size: 2.5em;
     margin-bottom: 20px;
+    text-shadow: 3px 5px #ffffff;
+}
+body{
+    height: 100%;
 }

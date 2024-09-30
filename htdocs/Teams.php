@@ -2,6 +2,7 @@
  <html>
     <head><link rel="stylesheet" href="team.css"></head>
     <body>
+    <div class="bg">
         <br>
         <br>
         <br>

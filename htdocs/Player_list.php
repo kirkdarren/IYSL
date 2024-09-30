@@ -5,10 +5,13 @@ include("menu.php");
 
 ?>
 <html>
-<body>
-    <head>
+<head>
     <link rel="stylesheet" href="player.css">
-    </head>
+</head>
+<body>
+<div class="bg">
+    <br>
+    <br>
 <h1> Player List </h1>
 
     <table border="1" align="center" cellspacing="0" cellpadding="10">

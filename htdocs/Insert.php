@@ -7,6 +7,10 @@ include("menu.php");
     <link rel="stylesheet" href="insert.css">
     </head>
     <body>
+    <div class="bg">
+        <br>
+        <br>
+        <br>
 <h1> Create Team </h1>
     <form method="post">
         <table border=1 align="center" cellspacing="0" cellpadding="10">

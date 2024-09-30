@@ -3,9 +3,15 @@ include("db_connect.php");
 include("menu.php");
 
 ?>
+<html>
 <head>
-    <link rel="stylesheet" href="insert.css">  </link>
+    <link rel="stylesheet" href="delteam.css"></link>
 </head>
+<body>
+<div class="bg">
+<br>
+<br>
+<br>
 <h1>Delete Team</h1>
 <form method="get">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
@@ -20,6 +26,9 @@ include("menu.php");
             </tr>
     
     </form>
+</body>
+</html>
+
 
     
     <?php

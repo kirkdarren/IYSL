@@ -6,10 +6,7 @@
 <h1> Create Players </h1>
     <form method="post">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
-            <tr>
-                <td> Player id  </td>
-                <td> <input type="text" name="player_id" placeholder=">=12390" required> </td>
-            </tr>
+
             <tr>
                 <td> Date of Birth </td>
                 <td> <input type="date" name="Birthday" required> </td>
@@ -52,7 +49,6 @@
     include("menu.php");
 
     if(isset($_POST['Insert1'])) {
-        $player_id = $_POST['player_id'];
         $Birthday = $_POST['Birthday'];
         $Email = $_POST['email'];
         $Contact_number = $_POST['Contact'];
@@ -62,16 +58,16 @@
         $Team_id = $_POST['Team'];
     
 
-        $sql = "SELECT * FROM Players WHERE Player_id = '$player_id'";
-        $query = mysqli_query($conn, $sql);
+    //     $sql = "SELECT * FROM Players WHERE Player_id = '$player_id'";
+    //     $query = mysqli_query($conn, $sql);
         
         
-        if(mysqli_num_rows($query) > 0) {
-            echo "<script> alert('Player already exists'); </script>";
-        } 
-    else {
-            $sql = "INSERT INTO Players (Player_id, Date_of_birth, Email, Contact_number , Last_name , First_name , Middle_name , Team_id)
-             VALUES ('$player_id', '$Birthday', '$Email', '$Contact_number', '$Last_name' , '$First_name' , '$Middle_name' , '$Team_id')";
+    //     if(mysqli_num_rows($query) > 0) {
+    //         echo "<script> alert('Player already exists'); </script>";
+    //     } 
+    // else {
+            $sql = "INSERT INTO Players (Date_of_birth, Email, Contact_number , Last_name , First_name , Middle_name , Team_id)
+             VALUES ('$Birthday', '$Email', '$Contact_number', '$Last_name' , '$First_name' , '$Middle_name' , '$Team_id')";
             $query = mysqli_query($conn, $sql);
         if($query)  {
                 echo "<script> alert('Player is added create 10 more'); window.location='InsPlaya1.php';</script>";
@@ -80,7 +76,7 @@
             }
         }
             
-    }
+    // }
 
 
 

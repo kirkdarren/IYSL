@@ -6,7 +6,6 @@ include("menu.php");
 <html>
     <head><link rel="stylesheet" href="home.css"></head>
     <body>
-    <div class="bg">
         <br>
         <br>
         <br>
@@ -15,6 +14,8 @@ include("menu.php");
         <br>
         <br>
         <br>
-        <h1>The Legendary 3</h1>
+        <h1>THE LEGENDARY 3</h1>
+        <h2>IYSL</h2>
+        
     </body>
 </html>

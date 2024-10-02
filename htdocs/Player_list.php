@@ -9,20 +9,20 @@ include("menu.php");
     <link rel="stylesheet" href="player.css">
 </head>
 <body>
-<div class="bg">
     <br>
     <br>
 <h1> Player List </h1>
 
     <table border="1" align="center" cellspacing="0" cellpadding="10">
         <tr>
+            <th>Last name</th>
+            <th>First name</th>
+            <th>Middle Name</th>
             <th> Player Id </th>
             <th> Date of birth </th>
             <th> Email </th>
             <th>Contact Number</th>
-            <th>Last name</th>
-            <th>First name</th>
-            <th>Middle Name</th>
+            
             <th>Team id</th>
         </tr>
         <?php 
@@ -33,13 +33,14 @@ include("menu.php");
         } else {
             while($result = mysqli_fetch_assoc($query)) {
                 echo "<tr>";
+                echo "<td>" . $result["Last_name"] . "</td>";
+                echo "<td>" . $result["First_name"] . "</td>";
+                echo "<td>" . $result["Middle_name"] . "</td>";
                 echo "<td>" . $result["Player_id"] . "</td>";
                 echo "<td>" . date("F d, Y", strtotime($result["Date_of_birth"])) . "</td>";
                 echo "<td>" . $result["Email"] . "</td>";
                 echo "<td>" . $result["Contact_number"] . "</td>";
-                echo "<td>" . $result["Last_name"] . "</td>";
-                echo "<td>" . $result["First_name"] . "</td>";
-                echo "<td>" . $result["Middle_name"] . "</td>";
+                
                 echo "<td>" . $result["Team_id"] . "</td>";
 
             }

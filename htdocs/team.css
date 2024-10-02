@@ -1,7 +1,7 @@
 body {
     background-color: #000;
     color: #fff; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 h1 {
@@ -17,7 +17,6 @@ table {
     margin: auto;
     background-color: #1e1e1e; 
     border: 1px solid #444;
-    opacity: 0.6; 
 }
 
 th, td {
@@ -53,12 +52,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-.bg {
-    background-image: url("images/mesi.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    opacity: 80%;
 }

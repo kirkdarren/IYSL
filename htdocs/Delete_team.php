@@ -8,7 +8,6 @@ include("menu.php");
     <link rel="stylesheet" href="delteam.css"></link>
 </head>
 <body>
-<div class="bg">
 <br>
 <br>
 <br>

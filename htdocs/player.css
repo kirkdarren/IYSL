@@ -9,7 +9,6 @@ h1 {
     color: #32a852; 
     font-size: 2.5em;
     margin-bottom: 20px;
-    text-shadow: 3px 5px #ffffff;
 }
 
 table {
@@ -18,7 +17,6 @@ table {
     margin: auto;
     background-color: #1e1e1e; 
     border: 1px solid #444;
-    opacity: 0.6;
 }
 
 th, td {
@@ -54,12 +52,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-.bg {
-    background-image: url("images/ben.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    opacity: 80%;
 }

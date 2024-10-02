@@ -8,7 +8,6 @@ include("menu.php");
     <link rel="stylesheet" href="delete.css"></link>
 </head>
 <body>
-<div class="bg">
     <br>
     <br>
     <br>

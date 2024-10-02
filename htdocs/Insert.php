@@ -7,7 +7,7 @@ include("menu.php");
     <link rel="stylesheet" href="insert.css">
     </head>
     <body>
-    <div class="bg">
+   
         <br>
         <br>
         <br>

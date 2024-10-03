@@ -13,13 +13,14 @@ include("menu.php");
     <br>
     <br>
     <br>
+<?php
+if(isset($_GET['search'])){
+$search=$_GET['search'];
+}
+?>
+   
 
-
-<h1> PLAYERS </h1>
-<form action="search.php" method="GET">
-    <input type="text" name="search" placeholder="Team id" >
-    <button>Search</button>
-</form>
+<h1> PLAYERS <?php echo"$search"?> </h1>
 
 <button><a href="InsPlaya.php">Add player</a></button>
 <button><a href="Delete.php">Delete player</a></button>
@@ -30,11 +31,11 @@ include("menu.php");
             <th> Date of birth </th>
             <th> Email </th>
             <th>Contact Number</th>
-            
             <th>Team id</th>
         </tr>
         <?php 
-        $sql = "SELECT * FROM Players ORDER BY Last_name ASC";
+        $search='%.$search.%';
+        $sql = "SELECT * FROM Players WHERE Team_id LIKE '%.$search.%' ORDER BY Last_name ASC";
         $query = mysqli_query($conn, $sql);
         if(!$query) {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);

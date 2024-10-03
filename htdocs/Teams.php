@@ -9,6 +9,8 @@
         <br>
         <br>
     <table><h1>TEAMS</h1>
+    <button><a href="Insert.php">Add team</a></button>
+    <button><a href="Delete_team.php">Delete team</a></button>
         <tr>
             <th> Team Id </th>
             <th> Team Name </th>

@@ -59,7 +59,7 @@ include("menu.php");
                  VALUES ('$team_name', '$city', '$Manager_Lname', '$Manager_Fname' , '$Manager_Mname')";
                 $query = mysqli_query($conn, $sql);
                 if($query) {
-                    echo "<script> alert(' Team is successfully registered'); window.location='InsPlaya.php';</script>";
+                    echo "<script> alert(' Team is successfully registered'); window.location='Teams.php';</script>";
                 } else {
                     echo "<script> alert('Error: " . $sql . "<br>" . mysqli_error($conn) . "'); </script>";
                 }

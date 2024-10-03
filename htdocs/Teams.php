@@ -8,7 +8,7 @@
         <br>
         <br>
         <br>
-    <table><h1>Teams</h1>
+    <table><h1>TEAMS</h1>
         <tr>
             <th> Team Id </th>
             <th> Team Name </th>

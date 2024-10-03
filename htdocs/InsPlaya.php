@@ -17,7 +17,7 @@
             </tr>
             <tr>
                 <td> Contact Number </td>
-                <td> <input type="text" name="Contact" required> </td>
+                <td> <input type="number" name="Contact" required> </td>
             </tr>
             <tr>
                 <td>Last Name </td>
@@ -70,7 +70,7 @@
              VALUES ('$Birthday', '$Email', '$Contact_number', '$Last_name' , '$First_name' , '$Middle_name' , '$Team_id')";
             $query = mysqli_query($conn, $sql);
         if($query)  {
-                echo "<script> alert('Player is added create 10 more'); window.location='InsPlaya1.php';</script>";
+                echo "<script> alert('Player is registered'); window.location='Player_list.php';</script>";
             } else {
                 echo "<script> alert('Error: " . $sql . "<br>" . mysqli_error($conn) . "'); </script>";
             }

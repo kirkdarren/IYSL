@@ -18,7 +18,7 @@ include("menu.php");
 <h1> PLAYERS </h1>
 <form action="search.php" method="GET">
     <input type="text" name="search" placeholder="Team id" >
-    <button>Search</button>
+   <input type="submit" value="Search">
 </form>
 
 <button><a href="InsPlaya.php">Add player</a></button>
@@ -48,6 +48,7 @@ include("menu.php");
                 echo "<td>" . $result["Email"] . "</td>";
                 echo "<td>" . $result["Contact_number"] . "</td>";
                 echo "<td>" . $result["Team_id"] . "</td>";
+                echo "<tr>";
 
             }
         }

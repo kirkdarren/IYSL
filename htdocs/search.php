@@ -35,7 +35,7 @@ $search=$_GET['search'];
         </tr>
         <?php 
         $search='%.$search.%';
-        $sql = "SELECT * FROM Players WHERE Team_id LIKE '%.$search.%' ORDER BY Last_name ASC";
+        $sql = "SELECT * FROM Players WHERE Last_name LIKE '%.$search.%' ORDER BY Last_name ASC";
         $query = mysqli_query($conn, $sql);
         if(!$query) {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);

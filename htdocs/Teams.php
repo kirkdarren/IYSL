@@ -15,9 +15,8 @@
             <th> Team Id </th>
             <th> Team Name </th>
             <th> City </th>
-            <th>Manager Last name</th>
-            <th>Manager First name</th>
-            <th>Manager Middle Name</th>
+            <th>Manager's Full name</th>
+           
         </tr>
         <?php 
         
@@ -34,9 +33,9 @@
                 echo "<td>" . $result["Team_id"] . "</td>";
                 echo "<td>" . $result["Team_name"] . "</td>";
                 echo "<td>" . $result["City"] . "</td>";
-                echo "<td>" . $result["Manager_Lastname"] . "</td>";
-                echo "<td>" . $result["Manager_Firstname"] . "</td>";
-                echo "<td>" . $result["Manager_Middlename"] . "</td>";
+                echo "<td>" . $result["Manager_Lastname"] . $result["Manager_Firstname"] . $result["Manager_Middlename"] ."</td>";
+    
+               
             }
         }
     ?>

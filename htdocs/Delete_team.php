@@ -38,6 +38,8 @@ include("menu.php");
        
         $sql = "DELETE FROM Team WHERE Team_id = $team_id";
         $conn ->query($sql);
+        echo"<script>alert ('Team is officially deleted'); window.location='Teams.php'; </script>";
+        
        
             
     }

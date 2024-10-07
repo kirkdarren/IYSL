@@ -37,6 +37,7 @@ include("menu.php");
        
         $sql = "DELETE FROM Players WHERE Player_id = $player_id";
         $conn ->query($sql);
+        echo"<script>alert ('Player is officially deleted'); window.location='Player_list.php'; </script>";
        
             
     }

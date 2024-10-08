@@ -19,8 +19,8 @@ include("menu.php");
 
 </form>
 <div>
-<button><a href="InsPlaya.php">Add player</a></button>
-<button><a href="Delete.php">Delete player</a></button>
+<button ><a href="InsPlaya.php">Add player</a></button>
+<button ><a href="Delete.php">Delete player</a></button>
 </div>
     <table border="1" align="center" cellspacing="0" cellpadding="10">
         <tr>

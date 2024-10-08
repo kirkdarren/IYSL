@@ -1,5 +1,5 @@
 body {
-    background-color: #000; 
+    background-color: #181616; 
     color: #fff; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -120,6 +120,6 @@ button a:hover {
 div{
     left: 180px;
     position: absolute;
-    top: 13%;
+    top: 60px;
 
 }

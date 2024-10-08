@@ -20,13 +20,16 @@ include("menu.php");
     <input type="text" name="search" placeholder="Team id" >
    <input type="submit" value="Search">
 </form>
-
+<div>
 <button><a href="InsPlaya.php">Add player</a></button>
 <button><a href="Delete.php">Delete player</a></button>
+</div>
     <table border="1" align="center" cellspacing="0" cellpadding="10">
         <tr>
             <th> Player Id </th>
-            <th>Full name</th>
+            <th>Last name</th>
+            <th>First name</th>
+            <th>Middle name</th>
             <th> Date of birth </th>
             <th> Email </th>
             <th>Contact Number</th>
@@ -43,7 +46,9 @@ include("menu.php");
 
                 echo "<tr>";
                 echo "<td>" . $result["Player_id"] . "</td>";
-                echo "<td>" . $result["Last_name"] . $result["First_name"] . $result["Middle_name"] .  "</td>";
+                echo "<td>" . $result["Last_name"] . "</td>";
+                echo "<td>"  . $result["First_name"] .   "</td>";
+                echo "<td>"  . $result["Middle_name"] .  "</td>";
                 echo "<td>" . date("F d, Y", strtotime($result["Date_of_birth"])) . "</td>";
                 echo "<td>" . $result["Email"] . "</td>";
                 echo "<td>" . $result["Contact_number"] . "</td>";

@@ -45,8 +45,8 @@ input[type="text"]:focus {
 }
 
 button[type="submit"] {
-    background-color: #32a852; 
-    color: #fff;
+    background-color: #d13126; 
+    color: #0a0a0a;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -54,7 +54,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #28a745;
+    background-color: #d13126;
     
 }
 

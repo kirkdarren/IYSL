@@ -1,8 +1,9 @@
+<html>
 <head>
     <link rel="stylesheet" href="insert.css">  </link>
 </head>
 
-<h1> Create Players </h1>
+
 <h1> Create Players </h1>
     <form method="post">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
@@ -43,10 +44,14 @@
             </tr>
             
     </form>
+    
+   <h2> <a href="Player_list.php">Back</a></h2>
 
+    
+    
+   </html>
     <?php
     include("db_connect.php");
-    include("menu.php");
 
     if(isset($_POST['Insert1'])) {
         $Birthday = $_POST['Birthday'];
@@ -81,3 +86,4 @@
 
 
     ?>
+    

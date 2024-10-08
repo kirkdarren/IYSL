@@ -36,10 +36,17 @@ include("menu.php");
         $player_id = $_GET['player_id'];
        
         $sql = "DELETE FROM Players WHERE Player_id = $player_id";
-        $conn ->query($sql);
-        echo"<script>alert ('Player is officially deleted'); window.location='Player_list.php'; </script>";
-       
+        $query = mysqli_query($conn, $sql);
+        
+        if($query){
+            echo"<script>alert ('Player is deleted'); window.location='Player_list.php'; </script>";
+
+        }else {
+            echo "<script> alert('Error: " . $sql . "<br>" . mysqli_error($conn) . "'); </script>";
+        }
             
+        
+
     }
 
 

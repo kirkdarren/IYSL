@@ -37,10 +37,14 @@ include("menu.php");
         $team_id = $_GET['team_id'];
        
         $sql = "DELETE FROM Team WHERE Team_id = $team_id";
-        $conn ->query($sql);
-        echo"<script>alert ('Team is officially deleted'); window.location='Teams.php'; </script>";
+        $query = mysqli_query($conn, $sql);
         
-       
+        if($query){
+            echo"<script>alert ('Player is deleted'); window.location='Player_list.php'; </script>";
+
+        }else {
+            echo "<script> alert('Error: " . $sql . "<br>" . mysqli_error($conn) . "'); </script>";
+        }
             
     }
 

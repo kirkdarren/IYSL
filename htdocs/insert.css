@@ -50,6 +50,7 @@ button[type="submit"] {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1.1em;
+   
 }
 
 button[type="submit"]:hover {

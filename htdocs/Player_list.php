@@ -16,9 +16,7 @@ include("menu.php");
 
 
 <h1> PLAYERS </h1>
-<form action="search.php" method="GET">
-    <input type="text" name="search" placeholder="Team id" >
-   <input type="submit" value="Search">
+
 </form>
 <div>
 <button><a href="InsPlaya.php">Add player</a></button>

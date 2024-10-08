@@ -40,7 +40,7 @@ include("menu.php");
         $query = mysqli_query($conn, $sql);
         
         if($query){
-            echo"<script>alert ('Player is deleted'); window.location='Player_list.php'; </script>";
+            echo"<script>alert ('Team is deleted'); window.location='Teams.php'; </script>";
 
         }else {
             echo "<script> alert('Error: " . $sql . "<br>" . mysqli_error($conn) . "'); </script>";

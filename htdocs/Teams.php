@@ -11,7 +11,7 @@
     <table><h1>TEAMS</h1>
 <div>
     <button><a href="Insert.php">Add team</a></button>
-    <button><a href="Delete_team.php">Delete team</a></button>
+    <button class="red"><a href="Delete_team.php">Delete team</a></button>
 </div>
         <tr>
             <th> Team Id </th>

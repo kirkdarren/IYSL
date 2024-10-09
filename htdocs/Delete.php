@@ -25,7 +25,7 @@ include("menu.php");
             </tr>
     
     </form>
-    <h2> <a href="Player_list.php">Back</a></h2>
+    
 </body>
 
     </html>

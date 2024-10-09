@@ -1,10 +1,21 @@
+<?php
+include("db_connect.php");
+include("menu.php")
+
+?>
 <html>
 <head>
     <link rel="stylesheet" href="insert.css">  </link>
 </head>
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<h1> Create Players </h1>
+
+<h1> Register a Player </h1>
     <form method="post">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
 
@@ -45,14 +56,14 @@
             
     </form>
     
-   <h2> <a href="Player_list.php">Back</a></h2>
+  
 
     
     
    </html>
     <?php
-    include("db_connect.php");
-
+    
+    
     if(isset($_POST['Insert1'])) {
         $Birthday = $_POST['Birthday'];
         $Email = $_POST['email'];
@@ -75,7 +86,7 @@
              VALUES ('$Birthday', '$Email', '$Contact_number', '$Last_name' , '$First_name' , '$Middle_name' , '$Team_id')";
             $query = mysqli_query($conn, $sql);
         if($query)  {
-                echo "<script> alert('Player is registered'); window.location='Player_list.php';</script>";
+                echo "<script> alert('Player is successfully registered'); window.location='Player_list.php';</script>";
             } else {
                 echo "<script> alert('Error: " . $sql . "<br>" . mysqli_error($conn) . "'); </script>";
             }

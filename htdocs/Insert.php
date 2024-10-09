@@ -11,7 +11,7 @@ include("menu.php");
         <br>
         <br>
         <br>
-<h1> Create Team </h1>
+<h1>Register a Team</h1>
     <form method="post">
         <table border=1 align="center" cellspacing="0" cellpadding="10">
            
@@ -42,7 +42,7 @@ include("menu.php");
                 </td>
             </tr>
     </form>
-    <h2> <a href="Teams.php">Back</a></h2>
+    
 
 
     <?php

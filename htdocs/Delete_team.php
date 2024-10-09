@@ -25,7 +25,7 @@ include("menu.php");
             </tr>
     
     </form>
-    <h2> <a href="Teams.php">Back</a></h2>
+    
 </body>
 </html>
 
